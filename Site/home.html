@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.thenounproject.com/png/1792984-200.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GSMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">GSMS</td>
+                <td id="navigation">
+                    <a href="#work">trabalhos</a>
+                    <a href="#bio">sobre nós</a>
+                    <a href="projeto.html">projeto</a>
+                    <a href="#contact">contato</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Bolsa de Resíduos</h1>
+                <a href="projeto.html" target="_blank" rel="noopener noreferrer"><button class="btn_one">Acessar</button><br></a>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-instagram"></i></a></td>
+                        <!-- 
+                        Redes sociais não utilizadas pelo setor.
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td> 
+                        -->
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>trabalhos</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://blog.forlabexpress.com.br/wp-content/uploads/2022/10/descarte-de-residuos-laboratoriais-residuo-perfurocortante.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://blog.forlabexpress.com.br/wp-content/uploads/2022/10/descarte-de-residuos-laboratoriais-transporte-interno.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://blog.forlabexpress.com.br/wp-content/uploads/2022/10/descarte-de-residuos-laboratoriais-imagem-destacada.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://www.vertown.com/uploads/2018/03/r%C3%B3tulos-de-res%C3%ADduos-perigosos-1.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://residuosliquidos.es/img/fotos-principales/residuos-liquidos-laboratorio.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://bhambiental.com/wp-content/uploads/2022/08/BH-Ambiental-para-o-gerenciamento-correto-dos-resi%CC%81duos-qui%CC%81micos.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://www.ecotransambiental.com.br/imagens/informacoes/coleta-residuos-perigosos-01.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="https://vipsolucoes.com.br/imagens/informacoes/empresas-descarte-residuos-quimicos-01.jpg">
+        </div>
+    </div>
+    <div id="bio">
+        <h1><nobr>sobre nós</nobr></h1>
+        <p>
+            Somos responsáveis pela educação, capacitação e comprometimento dos trabalhadores com questões de Saúde, Meio Ambiente e Segurança do Trabalho. Atuamos na promoção da saúde e na proteção do ser humano e do meio ambiente mediante identificação, controle e monitoramento de riscos, adequando a segurança de processos às melhores práticas mundiais e mantendo-se preparada para emergências.
+        </p>
+        <p>
+            Buscamos minimizar o máximo possível o impactos inerentes às atividades acadêmicas e de projetos, levando sempre em consideração o meio ambiente. Identificamos, avaliamos e gerenciamos os riscos de diversas atividades dos laboratórios da COPPE, a fim de evitar a ocorrência de acidentes e assegurar a minimização de seus efeitos.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>contato</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; rodolfo.sa@adc.coppe.ufrj.br</td>
+                                    <!--
+                                    <td><i class="fas fa-phone"></i> &nbsp; +55 21 3938-8473</td>
+                                    -->
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +55 21 3938-8473</td>
+                                    <!--
+                                    <td><i class="fas fa-at"></i> &nbsp; rodolfo.sa@adc.coppe.ufrj.br</td>
+                                    -->
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +55 21 2560-8320</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Bloco I - Sala 111,<br>
+                                        Centro de Tecnologia (CT)<br>
+                                        Ilha do Fundão - Rio de Janeiro
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-facebook"></i></a>
+                                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social"><i class="fab fa-instagram"></i></a>
+                                        <!--
+                                        Redes sociais não utilizadas pelo setor
+                                        <a class="social"><i class="fab fa-dribbble"></i></a>
+                                        <a class="social"><i class="fab fa-medium"></i></a>
+                                        -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="Nome" required>
+                            <input type="email" placeholder="Email" required><br>
+                            <textarea placeholder="Seu texto" required rows="5"></textarea><br>
+                            <button class="btn_one">Enviar</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        Gerência de Segurança do Trabalho Meio Ambiente e Saúde <br> <a href="https://dpadi.coppe.ufrj.br/gerencia-de-seguranca-do-trablho-meio-ambiente-e-saude/">GSMS</a>
+    </div>
+    <script src="home.js" type="text/javascript"></script>
+</body>
+</html>
